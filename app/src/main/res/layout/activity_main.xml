@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_sky"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_above="@+id/temperature"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="sans-serif-black"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="163dp"
+        android:layout_height="113dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="473dp"
+        android:gravity="center"
+        android:text="@string/temaperature_default"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="596dp"
+        android:text="Celsus/Fahrenheit  " />
+
+    <TextView
+        android:id="@+id/tempMax"
+        android:layout_width="147dp"
+        android:layout_height="81dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="249dp"
+        android:layout_marginBottom="497dp"
+        android:text="@string/temaperature_default"
+        android:textColor="@color/grey"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tempMin"
+        android:layout_width="144dp"
+        android:layout_height="84dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="249dp"
+        android:layout_marginBottom="422dp"
+        android:text="@string/temaperature_default"
+        android:textColor="@color/grey"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/speedWind"
+        android:layout_width="406dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:textColor="@color/grey"
+        android:layout_marginBottom="416dp"
+        android:text="@string/speedWind_default"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:id="@+id/itemWeather"
+        android:layout_width="85dp"
+        android:layout_height="79dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginBottom="491dp"
+        android:src="@drawable/ns" />
+
+    <TextView
+        android:id="@+id/windDirection"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="266dp"
+        android:layout_marginBottom="386dp"
+        android:text="@string/ventDirection_default"
+        android:textColor="@color/grey"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/windComment"
+        android:layout_width="252dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="377dp"
+        android:text=""
+        android:textColor="@color/grey"
+        android:textSize="20dp" />
+
+    <SearchView
+        android:id="@+id/searchLocation"
+        style="@style/ShapeAppearanceOverlay.Material3.SearchBar"
+        android:layout_width="233dp"
+        android:layout_height="22dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="725dp"
+        android:background="@color/grey_claire" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="266dp"
+        android:layout_marginBottom="348dp"
+        android:text="@string/humidite_default"
+        android:textColor="@color/grey"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/pression"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="314dp"
+        android:text="@string/pression_default"
+        android:textColor="@color/grey"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/goutte"
+        android:layout_width="33dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="405dp"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="288dp"
+        android:src="@drawable/goute" />
+
+
+</RelativeLayout>
